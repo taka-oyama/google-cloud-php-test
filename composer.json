@@ -1,0 +1,8 @@
+{
+  "name": "taka-oyama/grpc-bug-test",
+  "type": "project",
+  "description": "Test",
+  "require": {
+    "google/cloud-spanner": "^1.34"
+  }
+}
