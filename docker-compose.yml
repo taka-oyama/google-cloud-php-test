@@ -4,6 +4,6 @@ services:
     env_file: .env
     build:
       context: .
-    command: /bin/sh -c "composer install && php test.php"
+    command: /bin/sh -c "composer install && /bin/bash"
     volumes:
       - .:/app

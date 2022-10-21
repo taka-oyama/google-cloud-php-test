@@ -19,12 +19,3 @@ $database = (new SpannerClient())->connect($instanceName, $databaseName, [
 ]);
 
 $database->sessionPool()->warmup();
-
-echo 'Current sessions ------------------------------------------' . PHP_EOL;
-$response = (new ProtobufSpannerClient())->listSessions($database->name());
-$sessionIds = array_map(
-    static fn (Session $session) => $session->getName(),
-    iterator_to_array($response),
-);
-var_dump($sessionIds);
-echo '-----------------------------------------------------------' . PHP_EOL;
