@@ -1,8 +1,9 @@
 {
-  "name": "taka-oyama/grpc-bug-test",
+  "name": "taka-oyama/google-cloud-php-test",
   "type": "project",
-  "description": "Test",
+  "description": "Testing various google cloud services",
   "require": {
-    "google/cloud-spanner": "^1.34"
+    "php": "^8.0",
+    "google/cloud-spanner": "^1.53"
   }
 }
